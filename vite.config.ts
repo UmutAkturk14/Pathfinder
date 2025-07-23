@@ -9,6 +9,7 @@ export default defineConfig({
   resolve: {
     alias: {
       "@components": path.resolve(__dirname, "src/components"),
+      "@src": path.resolve(__dirname, "src"),
       "@lib": path.resolve(__dirname, "src/lib"),
       "@hooks": path.resolve(__dirname, "src/hooks"),
       "@styles": path.resolve(__dirname, "src/styles"),
@@ -25,6 +26,6 @@ export default defineConfig({
     },
   },
   server: {
-    port: 8080
-  }
+    port: 8080,
+  },
 });
